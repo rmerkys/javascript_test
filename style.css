@@ -1,0 +1,226 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.mainContainerWrapper, .bookFormContainerWrapper, .filterContainerWrapper, .bookContainerWrapper {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#bookFormContainerWrapper {
+  display: none;
+  padding: 10px 30px;
+}
+
+.mainContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.searchContainer {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#searchBook {
+  width: 90%;
+  padding-left: 10px;
+  font-size: 16px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.mainContainerButtons {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  height: 120px;
+}
+
+.mainContainerButtons button {
+  min-width: 100px;
+  padding: 5px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: lightgreen;
+  color: white;
+}
+
+.bookFormContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#addBookForm {
+  padding: 10px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-field {
+  width: 90%;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.form-field input {
+  width: 100%;
+  padding-left: 10px;
+  font-size: 12px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.formContainerButtons {
+  display: flex;
+  gap: 20px;
+}
+
+.formContainerButtons button {
+  min-width: 80px;
+  padding: 5px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: lightgreen;
+  color: white;
+}
+
+.filterContainer {
+  margin: auto;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 20px;
+  height: 75px;
+
+}
+
+.filterContainer button {
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: lightblue;
+  color: white;
+}
+
+.bookContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bookCard {
+  width: 350px;
+  height: 225px;
+  display: flex;
+  gap: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.bookImgContainer img {
+  width: 150px;
+  height: 225px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.bookDetails {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.bookTitleAndAuthor {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#bookName {
+  font-size: 30px;
+}
+
+#authorName {
+  font-size: 18px;
+}
+
+.bookCatAndYear {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.bookPriceAndLike {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 24px;
+}
+
+.bookCardButtons {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+}
+
+.bookCardButtons button {
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: lightblue;
+  color: white;
+}
+
+#bookLike {
+  font-size: 20px;
+  color: red;
+}

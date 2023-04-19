@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="script.js"></script>
+    <title>Knygų sąrašas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Knygų sąrašas</h1>
+    <div class="mainContainerWrapper">
+        <div class="mainContainer">
+            <div class="searchContainer">
+                <input id="searchBook" type="text" placeholder="paieška">
+            </div>
+            <div class="mainContainerButtons">
+                <button id="searchByAuthor">Autorių paieška</button>
+                <button id="searchByCategory">Kategorijos paieška</button>
+                <button id="bookAdd">Pridėti knygą</button>
+            </div>
+        </div>
+    </div>
+    <div id="bookFormContainerWrapper" class="bookFormContainerWrapper">
+        <div class="bookFormContainer">
+            <form id="addBookForm">
+                <div class="form-field">
+                    <input
+                      type="text"
+                      name="bookTitle"
+                      id="bookTitle"
+                      placeholder="Knygos pavadinimas"
+                    />
+                  </div>
+                <div class="form-field">
+                    <input
+                      type="text"
+                      name="author"
+                      id="author"
+                      placeholder="Autorius"
+                    />
+                  </div>
+                <div class="form-field">
+                    <input
+                      type="text"
+                      name="category"
+                      id="category"
+                      placeholder="Žanras"
+                    />
+                  </div>
+                <div class="form-field">
+                    <input
+                      type="number"
+                      name="yearPub"
+                      id="yearPub"
+                      placeholder="Išleidimo metai"
+                    />
+                  </div>
+                <div class="form-field">
+                    <input
+                      type="number"
+                      step="any"
+                      name="price"
+                      id="price"
+                      placeholder="Kaina"
+                    />
+                  </div>
+                <div class="form-field">
+                    <input
+                      type="text"
+                      name="picture"
+                      id="picture"
+                      placeholder="Viršelio URL"
+                    />
+                  </div>
+                <div class="formContainerButtons">
+                    <button id="addBook" type="submit">Pridėti</button>
+                    <button id="resetBook" type="reset">Išvalyti</button>
+                    <button id="closeBookAddition">Uždaryti</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="filterContainerWrapper">
+        <div class="filterContainer">
+            <button id="priceHigh"><i class="fa-solid fa-arrow-down-wide-short"></i>Brangiausios</button>
+            <button id="priceLow"><i class="fa-solid fa-arrow-down-short-wide"></i>Pigiausios</button>
+            <button id="standartOrder">Eilės tvarka</button>
+        </div>
+    </div>
+    <div class="bookContainerWrapper">
+        <div id="bookContainer" class="bookContainer">
+        </div>
+    </div>
+</body>
+</html>
